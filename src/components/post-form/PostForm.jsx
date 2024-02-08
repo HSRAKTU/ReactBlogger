@@ -45,6 +45,8 @@ export default function PostForm({ post }) {
                 if (dbPost) {
                     navigate(`/post/${dbPost.$id}`);
                 }
+            }else{
+                console.log("Appwrite upload error")
             }
         }
     };
